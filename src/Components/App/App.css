@@ -1,0 +1,15 @@
+.app-body {
+  width: 75%;
+  margin: auto;
+  margin-top: -26vh;
+  background: beige;
+  padding: 2%;
+  border-radius: 7px; 
+
+}
+
+.app-header{
+  background: #a80f23;
+  height: 32vh;
+}
+

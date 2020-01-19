@@ -1,0 +1,106 @@
+form {
+    overflow: hidden;
+}
+.fieldset {
+    border: none;
+    margin: 0;
+    padding: 0 12px;
+    margin-bottom: 15px;
+}
+
+
+legend{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+input, select {
+    width: 100%;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 45px;
+}
+.radio-wrap.selected{
+    background-color: #F3CB03;
+}
+[data-name]{
+    display: inline-block;
+    border: 1px solid #928686;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    padding: 10px 15px;
+    height: 45px;
+    background: #fff;
+}
+.title-code [data-name]{
+    width: 33.33%;
+}
+.title-wrap{
+    font-weight: 700;
+}
+.marital-status [data-name]{
+    width: 50%;
+}
+.fieldset [data-name]:nth-child(2) {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.fieldset [data-name]:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.radio-fill{
+	position: relative;
+}
+
+.radio-fill::before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 13px;
+    height: 13px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 100%;
+}
+.selected .radio-fill::before{
+    border: 1px solid transparent;
+}
+.selected .radio-fill::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 11px;
+    background: #F3CB03;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 #F3CB03, 4px 0 0 #F3CB03, 4px -2px 0 #F3CB03, 4px -4px 0 #F3CB03, 4px -6px 0 #F3CB03, 4px -8px 0 #F3CB03;
+    transform: rotate(45deg);
+}
+
+
+.Error legend, .Error .error-msg{
+    color:#a80f23;
+}
+.Error input {
+    border: 1px solid#a80f23;;
+}
+
+.submit-btn button{
+    float: right;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #245;
+    font-weight: 400;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    line-height: 1.42857143;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+    padding: 6px 12px;
+}
